@@ -1,0 +1,49 @@
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+li {
+  margin: 0.5rem 0;
+  font-weight: bold;
+  font-size: 1.1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  padding: 0.5rem 0;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+.action {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1.5rem;
+  gap: 1rem;
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+  padding: 0.5rem 2rem;
+  border: 1px solid #8a2b06;
+  background-color: #8a2b06;
+  color: white;
+  border-radius: 25px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover,
+button:active {
+  background-color: #641e03;
+  border-color: #641e03;
+}
