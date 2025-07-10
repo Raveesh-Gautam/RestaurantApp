@@ -41,7 +41,8 @@ const Meals = () => {
     <div className={styles.meals_manage}>
     <Card className={styles.meals}>
         {foodItems.map((ele)=>{
-            return (<MealItem key={ele.id} name={ele.name} ingredients={ele.ingredients} price={ele.price}></MealItem>)
+            return (<MealItem key={ele.id} name={ele.name} ingredients={ele.ingredients} price={ele.price}></MealItem>
+            )
         })}
     </Card>
     </div>

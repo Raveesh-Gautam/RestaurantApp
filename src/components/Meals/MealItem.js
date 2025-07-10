@@ -1,8 +1,14 @@
 import React from "react";
 import styles from "./MealItem.module.css"
+import FormItem from "./FormItem";
 const MealItem = (props) => {
+  const addToCartHandler=(quantity)=>{
+console.log(quantity);
+  }
   return (
-    <div className={styles.meal}>
+    <div>
+    <div className={styles.meal_manage}>
+      <div className={styles.meal} >
       <div className={styles.meal_name}>{props.name}</div>
       
         <div className={styles.meal_ingredient}>
@@ -15,7 +21,13 @@ const MealItem = (props) => {
         
       </div>
       <div className={styles.meal_price}>${props.price} </div>
-      <hr />
+      </div>
+      <div className={styles.form_item_data}>
+      <FormItem id={props.id} onAddToCart={addToCartHandler} />
+     </div>
+      
+    </div>
+    <hr />
     </div>
    
   );
