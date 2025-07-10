@@ -1,36 +1,23 @@
-.meal-wrapper{
-   
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #222;
-  
- 
 
-}
 .meal {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   line-height: 25px;
-    background-color: #fefefe;
+  /* background-color: #fefefe; */
   border-radius: 10px;
   padding: 16px 24px;
-   width: 80%;
   max-width: 800px;
-
-
+  
 }
-.meal-name {
+.meal_name {
   font-size: large;
   font-weight: 500;
 }
-.meal-ingredient {
+.meal_ingredient {
   font-style: italic;
   font-size: 1rem;
   color: #555;
 }
-.meal-price{
-    color:peru;
-      font-size: 1.2rem;
-
-
+.meal_price {
+  color: peru;
+  font-size: 1.2rem;
 }

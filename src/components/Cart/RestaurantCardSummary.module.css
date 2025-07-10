@@ -5,7 +5,7 @@
 
 
 
-.card-wrapper {
+.card_wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,11 +19,13 @@
   padding: 15px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
-  width: 80%;
+  width: 50%;
   max-width: 800px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
-.main-heading {
+.main_heading {
   font-size: large;
   color: white;
   display: flex;
@@ -32,7 +34,7 @@
   word-spacing: 8px;
 }
 
-.p-text {
+.p_text {
   font-size: large;
   color: white;
   display: flex;

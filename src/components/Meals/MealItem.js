@@ -1,12 +1,11 @@
 import React from "react";
-import "./MealItem.css";
+import styles from "./MealItem.module.css"
 const MealItem = (props) => {
   return (
-    <div className="meal-wrapper">
-    <div className="meal">
-      <div className="meal-name">{props.name}</div>
+    <div className={styles.meal}>
+      <div className={styles.meal_name}>{props.name}</div>
       
-        <div className="meal-ingredient">
+        <div className={styles.meal_ingredient}>
           {props.ingredients.map((ele, index) => (
             <span key={index}>
               {ele}
@@ -15,10 +14,10 @@ const MealItem = (props) => {
           ))}
         
       </div>
-      <div className="meal-price">${props.price} </div>
+      <div className={styles.meal_price}>${props.price} </div>
       <hr />
     </div>
-    </div>
+   
   );
 };
 
