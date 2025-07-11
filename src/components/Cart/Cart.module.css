@@ -4,14 +4,22 @@ ul {
   margin: 1rem 0;
 }
 
-li {
-  margin: 0.5rem 0;
+
+.nameAndPrice{
+margin: 0.5rem 0;
   font-weight: bold;
   font-size: 1.1rem;
-  display: flex;
-  justify-content: space-between;
+    display: flex;
+ flex-direction: column;
+  align-items: flex-start;
+    font-style: italic;
+    
 }
-
+.price{
+     color: peru;
+    flex-direction: row-reverse;
+     
+}
 .content {
   display: flex;
   justify-content: space-between;
@@ -31,7 +39,7 @@ li {
   gap: 1rem;
 }
 
-button {
+.buttonAction {
   font: inherit;
   cursor: pointer;
   padding: 0.5rem 2rem;
@@ -42,8 +50,46 @@ button {
   transition: background-color 0.3s ease;
 }
 
-button:hover,
-button:active {
+.buttonAction:hover,
+.buttonAction:active {
   background-color: #641e03;
   border-color: #641e03;
+}
+.handle_button{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 12px;
+
+}
+.buttonCal{
+  cursor: pointer;
+  padding: 0.5rem 2rem;
+  border: 1px solid #8a2b06;
+  color: red;
+  width: 12px;
+  margin: auto;
+  /* height: 30px; */
+  justify-content: center;
+  align-items: center;
+  font-weight: 900;
+  font-size: 18px;
+}
+.buttonCal:hover,
+.buttonCal:active {
+  background-color: #641e03;
+  border-color: #641e03;
+}
+.handleCardPrice{
+    display: flex;
+    justify-content: space-between;
+}
+.quantity_handle{
+    border: 1px solid black;
+  width: fit-content;
+      margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px;
 }
