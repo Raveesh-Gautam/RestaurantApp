@@ -2,6 +2,9 @@ ul {
   list-style: none;
   padding: 0;
   margin: 1rem 0;
+  max-height: 300px;
+  overflow-y: auto;
+  scroll-behavior: smooth;
 }
 
 
