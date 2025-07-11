@@ -1,8 +1,11 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react';
+import CartContext from '../store/auth-context';
 import Modal from '../UI/Modal';
-import styles from './Cart.module.css'
+import styles from './Cart.module.css';
  const CartData=[{id:1,name:"Shushi",price:170}];
 const Cart = (props) => {
+   const cartCtx= useContext(CartContext);
+   console.log("Cart",cartCtx.items)
 const [cartOpen ,setCartOpen]=useState();
     const handleClose=()=>{
 if(props.isOpen){
@@ -17,19 +20,25 @@ if(props.isOpen){
 
     }
   return (
-    <React.Fragment>{props.isOpen&&
+    <React.Fragment>
+        {props.isOpen&&
     <Modal>
  <ul className={styles.ul}>
-  {CartData.map((ele, index) => (
-    <li key={index}>
-      {ele.name} - ${ele.price}
+  {cartCtx.items.map((ele, index) => (
+    <>
+   <li  key={index}>
+      {ele.name} 
     </li>
+    <hr/>
+    </>
+    
   ))}
+  
 </ul>
 
 <div className={styles.content}>
   <span>Total Amount</span>
-  <span>35.22</span>
+  <span>${cartCtx.totalAmount}</span>
 </div>
 
 <div className={styles.action}>
@@ -37,9 +46,10 @@ if(props.isOpen){
   <button onClick={handleOrder}>Order</button>
 </div>
 
-    </Modal>}
+    </Modal>
+    }
     </React.Fragment>
   )
 }
 
-export default Cart
+export default Cart;
